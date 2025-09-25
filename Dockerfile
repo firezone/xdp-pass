@@ -26,7 +26,9 @@ FROM alpine:latest
 RUN apk add --no-cache \
     bpftool \
     iproute2 \
-    libbpf
+    libbpf \
+    jq \
+    ethtool
 
 # Create directory for XDP program
 WORKDIR /xdp
